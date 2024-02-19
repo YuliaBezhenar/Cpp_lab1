@@ -57,9 +57,9 @@ export class Tab3Page {
     let max = Number.MIN_SAFE_INTEGER;
     let min = Number.MAX_SAFE_INTEGER;
 
-    // Перебір рядків
+    //Перебір рядків
     for (let i = 0; i < this.a.length; i++) {
-      // Перебір колонок
+      //Перебір колонок
       for (let j = 0; j < this.a[i].length; j++) {
         const currentCellValue = this.a[i][j];
 
@@ -74,11 +74,11 @@ export class Tab3Page {
     }
 
     if (b === max) {
-      return 'green'; // Позначення найбільшого значення зеленим
+      return 'green';
     } else if (b === min) {
-      return 'blue'; // Позначення найменшого значення синім
+      return 'blue';
     } else {
-      return 'black'; // Інші значення залишаються білими або іншим кольором за замовчуванням
+      return 'black';
     }
   }
   ngOnInit() {
